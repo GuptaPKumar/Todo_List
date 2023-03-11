@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Body style */
+body {
+    background-color: mediumslateblue;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+}
+
+/* Heading font size */
+header {
+    font-size: 1.5rem;
+}
+
+/* Making center  */
+header, 
+form {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*  Some basic style of form input n buttons */
+form input, 
+form button {
+    padding: 0.5rem;
+    padding-left: 1rem;
+    font-size: 1.8rem;
+    border: none;
+    background: white;
+    border-radius: 2rem;
+}
+
+/*  Some basic style of form buttons */
+form button {
+    color: rgb(255, 200, 0);
+    background: white;
+    cursor: pointer;
+    transition: all 0.3 ease;
+    margin-left: 0.5rem;
+}
+
+/* Hover on buttons making opposite color efect  */
+form button:hover {
+    color: white;
+    background: rgb(255, 200, 0);
+}
+
+/* Style of add + symble */
+.fa-plus-circle {
+    margin-top: 0.3rem;
+    margin-left: -8px;
+}
+
+/* this is for center of All list added item */
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list {
+    min-width: 30%;
+    list-style: none;
+}
+
+/* this is for container style  */
+.todo {
+    margin: 0.5rem;
+    padding-left: 0.5rem;
+    background: white;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    border-radius: 2rem;
+} 
+
+/* this is for makeing right side of check symble  */
+.todo li {
+    flex: 1;
+}
+
+/* Some basic style of container text area */
+.trash-btn, 
+.complete-btn {
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+/* Some basic style of check button */
+.complete-btn {
+    background: rgb(255, 200, 0);
+}
+
+/* Some basic style of delet button */
+.trash-btn {
+    border-top-right-radius: 1.75rem;
+    border-bottom-right-radius: 1.75rem;
+    background: rgb(171, 171, 171);
+}
+
+/* some padding in container text area */
+.todo-item {
+    padding: 0rem 0.5rem;
+}
+
+/* Ths is for pointer event on check n delet button */
+.fa-trash, 
+.fa-check-circle {
+    pointer-events: none;
+}
+
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.slide {
+    transform: translateX(10rem);
+    opacity: 0;
+}
+
+/* some basics style of select items */
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+}
+
+/* some basics style of select items */
+.select {
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50px;
+}
+/* some basics style of select items */
+select {
+    color:rgb(255, 200, 0);
+    width: 10rem;
+    height: 3.2rem;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+/* some basics style of select items */
+.select::after {
+    content: "\25BC";
+    position: absolute;
+    background:rgb(255, 200, 0);
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+/* hover on select items  */
+.select::hover::after {
+    background: white;
+    color: rgb(255, 200, 0);
+}
